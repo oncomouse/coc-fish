@@ -1,18 +1,8 @@
 const {sources} = require('coc.nvim')
 const {exec} = require('child_process')
+const {promisify} = require('util')
 
-function execPromise(command) {
-  return new Promise(function (resolve, reject) {
-    exec(command, (error, stdout) => {
-      if (error) {
-        reject(error);
-        return;
-      }
-
-      resolve(stdout.trim());
-    });
-  });
-}
+const execPromise = promisify(exec)
 
 exports.activate = async context => {
   const source = {
@@ -22,6 +12,8 @@ exports.activate = async context => {
       const result = await execPromise(`fish -c "complete -C${cmd}"`)
       return {
         items: result
+          .stdout
+          .trim()
           .split('\n')
           .map(l => l.split('\t'))
           .map(pieces => ({
