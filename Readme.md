@@ -19,7 +19,7 @@ In Vim to add fish completion to your IDE.
 
 ## Legacy Version
 
-The initial version of this plugin was written in Vimscript, using the [example on Coc's wiki](https://github.com/neoclide/coc.nvim/wiki/Create-custom-source). I leave that version here, in case anyone prefers to use the Vimscript version.
+The initial version of this plugin was written in Vimscript, using the [example on Coc's wiki](https://github.com/neoclide/coc.nvim/wiki/Create-custom-source). It remains on the `vimscript` branch.
 
 ## Similar Work
 
