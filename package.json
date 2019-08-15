@@ -1,6 +1,6 @@
 {
   "name": "coc-fish",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "Coc completion source for fish shell",
   "main": "index.js",
   "engines": {
