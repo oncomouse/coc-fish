@@ -1,5 +1,7 @@
 # coc-fish
 
+*This is a legacy, Vimscript-based version of this completion framework.*
+
 Asynchronous completion source for [Coc](https://github.com/neoclide/coc.nvim) and [fish](https://github.com/fish-shell/fish-shell). Based on code from [vim-fish](https://github.com/dag/vim-fish).
 
 ## Installation
@@ -9,17 +11,15 @@ Dependencies:
 * [Coc](https://github.com/neoclide/coc.nvim)
 * [fish](https://github.com/fish-shell/fish-shell)
 
-With a working installation of Coc and an executable fish in your `$PATH`, run:
+Add this repository using your favorite package manager. For instance, with [vim-plug](https://github.com/junegunn/vim-plug), the following will install this package:
 
 ~~~vim
-:CocInstall coc-fish
+Plug 'oncomouse/coc-fish'
 ~~~
 
-In Vim to add fish completion to your IDE.
+This completion source depends on an executable `fish` binary in your `$PATH`.
 
-## Legacy Version
-
-The initial version of this plugin was written in Vimscript, using the [example on Coc's wiki](https://github.com/neoclide/coc.nvim/wiki/Create-custom-source). I leave that version here, in case anyone prefers to use the Vimscript version.
+After running `PlugInstall`, the source will be available for use in any fish files you edit.
 
 ## Similar Work
 
