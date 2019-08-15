@@ -2,6 +2,12 @@
   "name": "coc-fish",
   "version": "1.0.6",
   "description": "Coc completion source for fish shell",
+  "homepage": "https://github.com/oncomouse/coc-fish#readme",
+  "bugs": {
+    "url" : "https://github.com/oncomouse/coc-fish/issues",
+    "email" : "oncomouse@gmail.com"
+  },
+  "author": "Andrew Pilsch <oncomouse@gmail.com> (https://andrew.pilsch.com)",
   "main": "index.js",
   "engines": {
     "coc": ">=0.0.57"
@@ -50,8 +56,7 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "webpack"
   },
-  "author": "",
-  "license": "ISC",
+  "license": "MIT",
   "keywords": [
     "coc.nvim",
     "neovim",
