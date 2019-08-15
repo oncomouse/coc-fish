@@ -12,6 +12,9 @@
   "engines": {
     "coc": ">=0.0.57"
   },
+  "activationEvents": [
+    "onLanguage:fish"
+  ],
   "contributes": {
     "configuration": {
       "type": "object",
