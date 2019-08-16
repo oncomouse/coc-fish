@@ -1,6 +1,6 @@
 {
   "name": "coc-fish",
-  "version": "1.0.9",
+  "version": "1.0.10",
   "description": "Coc completion source for fish shell",
   "homepage": "https://github.com/oncomouse/coc-fish#readme",
   "bugs": {
