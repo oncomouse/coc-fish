@@ -1,10 +1,16 @@
-const {sources} = require('coc.nvim')
+const {sources, workspace} = require('coc.nvim')
 const {exec} = require('child_process')
 const {promisify} = require('util')
 
 const execPromise = promisify(exec)
 
 exports.activate = async context => {
+  const {nvim} = workspace
+  const hasFish = await nvim.call('executable', 'fish')
+  if (!hasFish) {
+    workspace.showMessage('Cannot find fish in $PATH', 'error')
+    return
+  }
   const source = {
     name: 'fish',
     doComplete: async opt => {
