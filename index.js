@@ -14,8 +14,8 @@ exports.activate = async context => {
   const source = {
     name: 'fish',
     doComplete: async opt => {
-      const cmd = opt.input.replace(/(["\s'$`\\])/g, '\\$1')
-      const result = await execPromise(`fish -c "complete -C${cmd}"`)
+      const cmd = opt.line.replace(/(['$`\\])/g, '\\$1')
+      const result = await execPromise(`fish -c "complete --do-complete='${cmd}'"`)
       return {
         items: result
           .stdout
